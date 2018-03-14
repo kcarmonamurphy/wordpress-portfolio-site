@@ -1,4 +1,4 @@
-<!-- @php(dynamic_sidebar('sidebar-primary')) -->
+<!-- <?php (dynamic_sidebar('sidebar-primary')); ?> -->
 
 <div class="sidebar-container">
 	<div class="name-stacked">
@@ -45,9 +45,9 @@
 	</div>
 
 	<div class="social-icons">
-		<img src="@asset('images/icons8-facebook.png')">
-		<img src="@asset('images/icons8-stackoverflow.png')">
-		<img src="@asset('images/icons8-linkedin.png')">
-		<img src="@asset('images/icons8-github.png')">
+		<img src="<?= App\asset_path('images/icons8-facebook.png'); ?>">
+		<img src="<?= App\asset_path('images/icons8-stackoverflow.png'); ?>">
+		<img src="<?= App\asset_path('images/icons8-linkedin.png'); ?>">
+		<img src="<?= App\asset_path('images/icons8-github.png'); ?>">
 	</div>
 </div>
