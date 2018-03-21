@@ -5,14 +5,12 @@
     @php(do_action('get_header'))
     @include('partials.header')
     <div class="wrap container" role="document">
-      <div class="content">
-        <aside class="sidebar">
-          @include('partials.sidebar')
-        </aside>
-        <main class="main">
-          @yield('content')
-        </main>
-      </div>
+      <aside class="sidebar">
+        @include('partials.sidebar')
+      </aside>
+      <main class="main">
+        @yield('content')
+      </main>
     </div>
     @php(do_action('get_footer'))
     @include('partials.footer')

@@ -10,7 +10,7 @@
   },
   "publicPath": "/app/themes/sage",
   "devUrl": "http://kevincarmonamurphy.local:8000",
-  "proxyUrl": "http://localhost:3000",
+  "proxyUrl": "http://localhost:4000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
