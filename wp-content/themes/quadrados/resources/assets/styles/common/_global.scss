@@ -18,13 +18,8 @@ body {
 
 main {
   padding: 0 25px;
-  overflow: scroll;
+  overflow-y: scroll;
   margin-top: 30px;
-}
-
-aside {
-  background-color: white;
-  width: 300px; /* Set the width of the sidebar */
 }
 
 header.banner {
@@ -33,32 +28,6 @@ header.banner {
   @media only screen and (min-width: 600px) {
     display: none;
   }
-}
-
-.articles,
-.portfolio {
-  display: flex;
-
-  article {
-    flex-basis: 33.33%;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #bbb;
-    margin: 0 10px;
-  }
-
-  article:first-of-type {
-    margin-left: 0;
-  }
-
-  article:last-of-type {
-    margin-right: 0;
-  }
-}
-
-article .thumbnail img {
-  width: 100%;
-  height: auto;
 }
 
 h1,

@@ -2,11 +2,12 @@
 
 @section('content')
 
-  <h1>articles</h1>
-
   @php( query_posts( 'category_name=articles&posts_per_page=3'))
 
-  {!! get_the_posts_navigation() !!}
+  <header class="section-header">
+    <h1>articles</h1>
+    {!! get_the_posts_navigation() !!}
+  </header>
 
   <div class="articles">
 
@@ -23,11 +24,12 @@
 
   </div>
 
-  <h1>portfolio</h1>
-
   @php( query_posts( 'category_name=portfolio&posts_per_page=3'))
 
-  {!! get_the_posts_navigation() !!}
+  <header class="section-header">
+    <h1>portfolio</h1>
+    {!! get_the_posts_navigation() !!}
+  </header>
 
   <div class="portfolio">
 

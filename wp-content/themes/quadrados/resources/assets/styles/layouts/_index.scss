@@ -1,0 +1,42 @@
+header.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.articles,
+.portfolio {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 20px;
+
+  article {
+    flex-basis: 33.33%;
+  }
+
+  .article-tile-container {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #bbb;
+    margin: 0 10px;
+  }
+
+  article:nth-child(3n+1) .article-tile-container {
+    margin-left: 0;
+  }
+
+  article:nth-child(3n) .article-tile-container {
+    margin-right: 0;
+  }
+}
+
+article .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+h2,
+p {
+  margin-bottom: 10px;
+}
