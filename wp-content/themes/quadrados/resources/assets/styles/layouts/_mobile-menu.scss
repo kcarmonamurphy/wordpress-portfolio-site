@@ -1,0 +1,52 @@
+.initials-horizontal {
+  display: inline-block;
+
+  h1 {
+    z-index: 5;
+    position: relative;
+  }
+
+  .grey-square {
+    height: 45px;
+    width: 45px;
+    background-color: $background-grey;
+    margin: 0 8px;
+    display: inline-block;
+  }
+
+  .grey-square:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.nav-menu {
+  display: none;
+}
+
+.hamburger-menu {
+  float: right;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: $background-grey;
+
+  div {
+    height: 95%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .closed {
+    background: url('images/icons8-menu.png') no-repeat center center;
+  }
+
+  .open {
+    display: none;
+    background: url('images/icons8-delete_sign.png') no-repeat center center;
+  }
+}
+
+header.container {
+  background-color: white;
+  padding: 0 25px;
+}

@@ -4,8 +4,7 @@
 
   <header class="section-header">
     <h1>articles</h1>
-    <?php echo get_the_posts_navigation(); ?>
-
+    <a href="/category/articles">See all</a>
   </header>
 
   <div class="articles">
@@ -29,8 +28,7 @@
 
   <header class="section-header">
     <h1>portfolio</h1>
-    <?php echo get_the_posts_navigation(); ?>
-
+    <a href="/category/portfolio">See all</a>
   </header>
 
   <div class="portfolio">

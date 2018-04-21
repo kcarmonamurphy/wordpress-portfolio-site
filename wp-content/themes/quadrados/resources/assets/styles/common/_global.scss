@@ -22,11 +22,19 @@ main {
   margin-top: 30px;
 }
 
-header.banner {
+header.container {
   display: block;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+aside.sidebar {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
   }
 }
 
@@ -38,7 +46,8 @@ h5,
 h6,
 span,
 p,
-a {
+a,
+input {
   font-family: 'Fira Mono', monospace;
   font-weight: normal;
   color: #252525;
@@ -54,7 +63,8 @@ h2 {
   font-size: 22px;
 }
 
-h3 {
+h3,
+input {
   font-size: 18px;
 }
 
