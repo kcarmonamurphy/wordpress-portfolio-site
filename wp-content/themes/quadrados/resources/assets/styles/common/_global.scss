@@ -17,15 +17,15 @@ body {
 }
 
 main {
-  padding: 0 25px;
+  padding: 25px;
   overflow-y: scroll;
-  margin-top: 30px;
+  width: 100%;
 }
 
 header.container {
   display: block;
 
-  @media only screen and (min-width: 768px) {
+  @include sidebar-breakpoint {
     display: none;
   }
 }
@@ -33,7 +33,7 @@ header.container {
 aside.sidebar {
   display: none;
 
-  @media only screen and (min-width: 768px) {
+  @include sidebar-breakpoint {
     display: block;
   }
 }

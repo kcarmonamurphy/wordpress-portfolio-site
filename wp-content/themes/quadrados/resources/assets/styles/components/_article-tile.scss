@@ -1,0 +1,58 @@
+.articles,
+.portfolio {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 20px;
+
+  .article-tile-container {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #bbb;
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  @include phone {
+    article {
+      flex-basis: 100%;
+
+      .article-tile-container {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include tablet {
+    article {
+      flex-basis: 50%;
+    }
+
+    article:nth-child(2n+1) .article-tile-container {
+      margin-left: 0;
+    }
+
+    article:nth-child(2n) .article-tile-container {
+      margin-right: 0;
+    }
+  }
+
+  @include desktop {
+    article {
+      flex-basis: 33.33%;
+    }
+
+    article:nth-child(3n+1) .article-tile-container {
+      margin-left: 0;
+    }
+
+    article:nth-child(3n) .article-tile-container {
+      margin-right: 0;
+    }
+  }
+}
+
+article .thumbnail img {
+  width: 100%;
+  height: auto;
+}

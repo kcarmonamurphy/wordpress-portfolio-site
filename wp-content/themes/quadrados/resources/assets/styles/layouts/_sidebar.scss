@@ -1,6 +1,6 @@
 aside.sidebar {
   background-color: white;
-  flex: 1 0 275px;
+  width: 350px;
   overflow-y: scroll;
 }
 
@@ -21,4 +21,6 @@ aside.sidebar {
     width: 45px;
     background-color: $background-grey;
   }
+
+  margin-bottom: 30px;
 }
